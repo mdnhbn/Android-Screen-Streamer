@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Screen Sharing App</string>
+    <string name="start_broadcasting">Start Broadcasting</string>
+    <string name="join_as_viewer">Join as Viewer</string>
+    <string name="start_streaming">Start Streaming</string>
+    <string name="stop_streaming">Stop Streaming</string>
+    <string name="ready_to_broadcast">Ready to broadcast</string>
+    <string name="connecting">Connecting...</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="streaming_started">Streaming started - Waiting for viewer</string>
+    <string name="streaming_stopped">Streaming stopped</string>
+    <string name="viewer_connected">Viewer connected</string>
+    <string name="receiving_stream">Receiving video stream</string>
+    <string name="connection_failed">Connection failed</string>
+    <string name="permission_denied">Screen capture permission denied</string>
+    <string name="failed_to_start_streaming">Failed to start streaming</string>
+</resources>
+
