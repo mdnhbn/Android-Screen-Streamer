@@ -10,6 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ./android_app  # Set default working directory for all run steps
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -22,14 +26,13 @@ jobs:
         cache: 'gradle'
 
     - name: Grant execute permission for gradlew
-      run: chmod +x android_app/gradlew
+      run: chmod +x ./gradlew
     
     - name: Build with Gradle
-      working-directory: ./android_app
       run: ./gradlew assembleDebug
 
     - name: Upload APK as an Artifact
-      uses: actions/upload-artifact@v4  # <-- এই লাইনটি পরিবর্তন করা হয়েছে
+      uses: actions/upload-artifact@v4
       with:
         name: app-debug.apk
         path: android_app/app/build/outputs/apk/debug/app-debug.apk
